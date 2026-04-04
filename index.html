@@ -41,6 +41,7 @@
         <img src="images/sphere-large.png" alt="" class="hero__sphere hero__sphere--large" width="187" height="187">
         <img src="images/sphere-small.png" alt="" class="hero__sphere hero__sphere--small" width="65" height="65">
         <img src="images/sphere-medium.png" alt="" class="hero__sphere hero__sphere--medium" width="118" height="118">
+        <img src="images/sphere-small.png" alt="" class="hero__sphere hero__sphere--small-tl" width="50" height="50">
       </div>
       <div class="hero__inner">
         <div class="hero__text">
@@ -68,8 +69,8 @@
           </div>
           <h3>Rápido</h3>
           <p>Um texto descritivo bem bacana aqui. Que tal usar este espaço para descrever o que faz?</p>
-          <a href="#" class="benefits__arrow">
-            <img src="images/icon-arrow.svg" alt="Saiba mais" width="25" height="25">
+          <a href="#" class="benefits__arrow" aria-label="Saiba mais">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
         <div class="benefits__card">
@@ -78,8 +79,8 @@
           </div>
           <h3>Do seu jeito</h3>
           <p>Um texto descritivo bem bacana aqui. Que tal usar este espaço para descrever o que faz?</p>
-          <a href="#" class="benefits__arrow">
-            <img src="images/icon-arrow.svg" alt="Saiba mais" width="25" height="25">
+          <a href="#" class="benefits__arrow" aria-label="Saiba mais">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
         <div class="benefits__card">
@@ -88,8 +89,8 @@
           </div>
           <h3>Como você queria</h3>
           <p>Um texto descritivo bem bacana aqui. Que tal usar este espaço para descrever o que faz?</p>
-          <a href="#" class="benefits__arrow">
-            <img src="images/icon-arrow.svg" alt="Saiba mais" width="25" height="25">
+          <a href="#" class="benefits__arrow" aria-label="Saiba mais">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
       </div>
@@ -118,33 +119,31 @@
 
     <!-- Contact -->
     <section class="contact" id="contato">
+      <div class="contact__chat-icon">
+        <img src="images/chat-icon.png" alt="" width="154" height="110">
+      </div>
+      <h2 class="contact__heading">Ainda tem dúvidas? Fale conosco!</h2>
       <div class="contact__inner">
         <div class="contact__info">
-          <h2>Ainda tem dúvidas? Fale conosco!</h2>
-          <p>Um texto sobre o seu produto ou serviço. Explique porque ele é valioso e direcione o usuário ao próximo objetivo.</p>
+          <p>Ofereça um meio de comunicação direta. Pode ser um <strong class="text-purple">contato@email.com.br</strong></p>
+          <p>Ou crie um formulário ao lado que entrem em contato <strong class="text-purple">o mais rápido possível!</strong></p>
           <div class="contact__channels">
             <div class="contact__channel">
-              <img src="images/chat-icon.png" alt="" width="154" height="110">
-            </div>
-            <div class="contact__channel">
-              <span class="contact__channel-label">Email</span>
-              <a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a>
-            </div>
-            <div class="contact__channel">
-              <span class="contact__channel-label">WhatsApp</span>
               <a href="#">
                 <img src="images/icon-whatsapp.png" alt="WhatsApp" width="20" height="20" class="contact__whatsapp-icon">
-                Chamar no WhatsApp
+                Hey! Estamos no whatsapp!
               </a>
             </div>
           </div>
         </div>
         <form class="contact__form" action="#" method="post">
-          <input type="text" name="nome" placeholder="Nome" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="tel" name="telefone" placeholder="Telefone">
-          <textarea name="mensagem" placeholder="Mensagem" rows="4"></textarea>
-          <button type="submit" class="btn btn--primary">Enviar</button>
+          <div class="contact__form-row">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="sobrenome" placeholder="Nome Sobrenome" required>
+          </div>
+          <input type="email" name="email" placeholder="nome@email.com.br" required>
+          <input type="tel" name="telefone" placeholder="21 9988-7766">
+          <button type="submit" class="btn btn--contact-submit">Enviar!</button>
         </form>
       </div>
     </section>
@@ -171,8 +170,10 @@
       <div class="footer__newsletter">
         <p>Receba as novidades do nice</p>
         <form class="footer__newsletter-form" action="#" method="post">
-          <input type="email" placeholder="nome@email.com" required>
-          <button type="submit" class="btn btn--primary">Inscrever</button>
+          <div class="footer__newsletter-group">
+            <input type="email" placeholder="nome@email.com" required>
+            <button type="submit" class="btn btn--newsletter">Inscrever</button>
+          </div>
         </form>
       </div>
       <div class="footer__bottom">
