@@ -401,32 +401,6 @@ a {
   pointer-events: none;
 }
 
-.feature__gradient-blur {
-  position: absolute;
-  pointer-events: none;
-}
-
-.feature__gradient-blur--ellipse {
-  width: 307px;
-  height: 307px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #00c2ff, #ff29c3);
-  filter: blur(100px);
-  opacity: 0.35;
-  top: 72px;
-  left: 47%;
-}
-
-.feature__gradient-blur--rect {
-  width: 147px;
-  height: 209px;
-  background: linear-gradient(to bottom, #184bff, #174aff);
-  filter: blur(100px);
-  opacity: 0.35;
-  top: 214px;
-  left: 53%;
-}
-
 .feature__sphere {
   position: absolute;
   pointer-events: none;
@@ -989,11 +963,6 @@ a {
     height: 180px;
     top: -30px;
     right: -20px;
-  }
-
-  .feature__gradient-blur--ellipse,
-  .feature__gradient-blur--rect {
-    display: none;
   }
 
   /* Contact */
