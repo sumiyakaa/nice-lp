@@ -363,6 +363,7 @@ a {
 
 .benefits__icon img {
   object-fit: contain;
+  max-width: none;
 }
 
 .benefits__card h3 {
@@ -674,6 +675,7 @@ a {
   height: 46px;
   border-radius: 8px;
   padding: 11px 0;
+  align-self: flex-end;
 }
 
 /* === Footer === */
