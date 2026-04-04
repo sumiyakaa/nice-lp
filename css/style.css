@@ -387,7 +387,7 @@ a {
   max-width: 1440px;
   margin: 10px auto 60px;
   padding: 0 38px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .feature__bg {
