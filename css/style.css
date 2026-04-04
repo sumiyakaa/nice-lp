@@ -194,32 +194,17 @@ a {
 }
 
 .hero__sphere--large {
-  top: 40px;
-  right: 60px;
-  width: 187px;
-  height: 187px;
-}
-
-.hero__sphere--small {
-  bottom: 80px;
-  left: 120px;
-  width: 65px;
-  height: 65px;
+  top: 30px;
+  right: 40px;
+  width: 180px;
+  height: 180px;
 }
 
 .hero__sphere--medium {
-  top: 200px;
-  right: 400px;
+  top: 220px;
+  right: 380px;
   width: 118px;
   height: 118px;
-}
-
-.hero__sphere--small-tl {
-  top: 30px;
-  left: 80px;
-  width: 50px;
-  height: 50px;
-  z-index: 1;
 }
 
 .hero__inner {
@@ -272,7 +257,7 @@ a {
 }
 
 .hero__image img {
-  width: 337px;
+  width: 440px;
   height: auto;
   display: block;
 }
@@ -325,8 +310,8 @@ a {
 }
 
 .benefits__icon img {
-  width: 80px;
-  height: 80px;
+  width: 160px;
+  height: 160px;
   object-fit: contain;
 }
 
@@ -392,25 +377,25 @@ a {
 }
 
 .feature__sphere--1 {
-  top: 30px;
-  right: 80px;
-  width: 187px;
-  height: 187px;
+  bottom: 30px;
+  left: 40px;
+  width: 180px;
+  height: 180px;
 }
 
 .feature__sphere--2 {
-  bottom: 30px;
-  left: 40px;
-  width: 118px;
-  height: 118px;
-  z-index: 1;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
+  width: 180px;
+  height: 180px;
 }
 
 .feature__sphere--3 {
-  top: 50%;
-  right: 300px;
-  width: 65px;
-  height: 65px;
+  top: 40px;
+  right: 280px;
+  width: 120px;
+  height: 120px;
 }
 
 .feature__inner {
@@ -485,9 +470,21 @@ a {
 .contact__heading {
   font-size: 24px;
   font-weight: 700;
-  color: var(--yellow);
+  color: var(--black);
   text-align: center;
   margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.contact__heading-underline {
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--yellow);
+  border-radius: 2px;
+  margin: 12px auto 0;
 }
 
 .contact__inner {
@@ -541,8 +538,8 @@ a {
 }
 
 .contact__whatsapp-icon {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 .contact__form {
@@ -585,18 +582,15 @@ a {
 }
 
 .btn--contact-submit {
-  background: transparent;
-  border: 2px solid var(--yellow);
-  color: var(--yellow);
+  width: 100%;
   border-radius: 100px;
-  align-self: flex-start;
 }
 
 /* === Footer === */
 .footer {
   background: var(--purple-dark);
   color: var(--white);
-  padding: 60px 0 40px;
+  padding: 40px 0 0;
 }
 
 .footer__inner {
@@ -609,7 +603,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 48px;
+  padding-bottom: 40px;
 }
 
 .footer__logo-img {
@@ -652,8 +646,7 @@ a {
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding-top: 32px;
-  margin-bottom: 32px;
+  padding: 30px 0;
 }
 
 .footer__newsletter p {
@@ -697,7 +690,7 @@ a {
 .footer__bottom {
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding-top: 24px;
+  padding: 20px 0;
 }
 
 .footer__bottom p {
@@ -790,7 +783,7 @@ a {
   }
 
   .hero__image img {
-    width: 280px;
+    width: 320px;
   }
 
   .hero__sphere--large {
@@ -800,25 +793,11 @@ a {
     right: 10px;
   }
 
-  .hero__sphere--small {
-    width: 45px;
-    height: 45px;
-    bottom: 60px;
-    left: 20px;
-  }
-
   .hero__sphere--medium {
     width: 80px;
     height: 80px;
     top: 160px;
-    right: 200px;
-  }
-
-  .hero__sphere--small-tl {
-    width: 35px;
-    height: 35px;
-    top: 15px;
-    left: 20px;
+    right: 120px;
   }
 
   /* Benefits */
@@ -874,21 +853,21 @@ a {
   .feature__sphere--1 {
     width: 100px;
     height: 100px;
-    top: 10px;
-    right: 10px;
-  }
-
-  .feature__sphere--2 {
-    width: 70px;
-    height: 70px;
-    bottom: 20px;
+    bottom: 10px;
     left: 10px;
   }
 
+  .feature__sphere--2 {
+    width: 100px;
+    height: 100px;
+    right: -30px;
+  }
+
   .feature__sphere--3 {
-    width: 40px;
-    height: 40px;
-    right: 50px;
+    width: 70px;
+    height: 70px;
+    top: 20px;
+    right: 60px;
   }
 
   /* Contact */
@@ -924,7 +903,7 @@ a {
     flex-direction: column;
     gap: 24px;
     text-align: center;
-    margin-bottom: 32px;
+    padding-bottom: 24px;
   }
 
   .footer__nav {
