@@ -192,10 +192,10 @@ a {
 
 .hero__sphere {
   position: absolute;
-  top: 62px;
-  left: 94px;
-  width: 124px;
-  height: 124px;
+  top: 5px;
+  left: 300px;
+  width: 130px;
+  height: 130px;
   pointer-events: none;
   z-index: 1;
 }
@@ -397,7 +397,7 @@ a {
   right: 38px;
   bottom: 0;
   background: transparent;
-  overflow: visible;
+  overflow: hidden;
   pointer-events: none;
 }
 
@@ -864,10 +864,10 @@ a {
   }
 
   .hero__sphere {
-    width: 66px;
-    height: 66px;
-    top: 33px;
-    left: 50px;
+    width: 70px;
+    height: 70px;
+    top: 3px;
+    left: 160px;
   }
 
   /* Benefits */
