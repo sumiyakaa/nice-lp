@@ -185,19 +185,20 @@ a {
   width: 100%;
   height: 100%;
   background-image: url('../images/noise.png');
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: auto;
   opacity: 0.2;
   mix-blend-mode: overlay;
 }
 
 .hero__sphere {
   position: absolute;
-  top: 5px;
-  left: 300px;
-  width: 130px;
-  height: 130px;
+  top: 62px;
+  left: 94px;
+  width: 124px;
+  height: 124px;
   pointer-events: none;
-  z-index: 1;
+  z-index: 3;
 }
 
 .hero__inner {
@@ -241,6 +242,37 @@ a {
   gap: 16px;
 }
 
+.hero__gradient {
+  position: absolute;
+  right: 178px;
+  top: 29px;
+  width: 317px;
+  height: 363px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero__gradient-ellipse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 317px;
+  height: 317px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #00c2ff, #ff29c3);
+  filter: blur(200px);
+}
+
+.hero__gradient-rect {
+  position: absolute;
+  top: 147px;
+  left: 82px;
+  width: 152px;
+  height: 216px;
+  background: linear-gradient(to bottom, #184bff, #174aff);
+  filter: blur(200px);
+}
+
 .hero__image {
   position: absolute;
   right: 97px;
@@ -248,7 +280,7 @@ a {
   z-index: 2;
 }
 
-.hero__image img {
+.hero__image img:not(.hero__sphere) {
   width: 599px;
   height: auto;
   display: block;
@@ -406,23 +438,53 @@ a {
   pointer-events: none;
 }
 
+.feature__gradient {
+  position: absolute;
+  right: 416px;
+  top: 72px;
+  width: 307px;
+  height: 351px;
+  pointer-events: none;
+}
+
+.feature__gradient-ellipse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 307px;
+  height: 307px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #00c2ff, #ff29c3);
+  filter: blur(200px);
+}
+
+.feature__gradient-rect {
+  position: absolute;
+  top: 142px;
+  left: 80px;
+  width: 147px;
+  height: 209px;
+  background: linear-gradient(to bottom, #184bff, #174aff);
+  filter: blur(200px);
+}
+
 .feature__sphere--1 {
   top: 67px;
-  right: 143px;
+  right: 343px;
   width: 187px;
   height: 187px;
 }
 
 .feature__sphere--2 {
   top: 144px;
-  right: 541px;
+  right: 741px;
   width: 65px;
   height: 65px;
 }
 
 .feature__sphere--3 {
   top: 260px;
-  right: 100px;
+  right: 300px;
   width: 118px;
   height: 118px;
   filter: blur(7px);
@@ -441,7 +503,7 @@ a {
   z-index: 2;
   display: flex;
   align-items: flex-start;
-  gap: 100px;
+  gap: 130px;
   max-width: 1364px;
   margin: 0 auto;
   padding: 132px 80px 86px 6px;
@@ -696,7 +758,8 @@ a {
 .footer__newsletter {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 26px;
   border-top: 1px solid #ae97cb;
   padding: 30px 0;
 }
@@ -861,6 +924,27 @@ a {
 
   .hero__image {
     position: relative;
+  }
+
+  .hero__gradient {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 200px;
+    width: 200px;
+    height: 230px;
+  }
+
+  .hero__gradient-ellipse {
+    width: 200px;
+    height: 200px;
+    filter: blur(120px);
+  }
+
+  .hero__gradient-rect {
+    width: 100px;
+    height: 140px;
+    filter: blur(120px);
   }
 
   .hero__sphere {
